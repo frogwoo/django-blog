@@ -16,8 +16,14 @@
 
 		<div class='main'>
 			<h5>Date</h5>
-			<h3>Title</h3>
-			<p>Text goes here</p>
+			<h3>Title2</h3>
+			{% for post in posts %}
+				<div class="post">
+					<h2>{{ post.title}}</h2>
+					<h3>{{ post.published_date}}</h3>
+    				<p>{{ post.text | linebreaks}}</p>
+    			</div>
+			{% endfor %}
 		</div>
 	</body>
 
