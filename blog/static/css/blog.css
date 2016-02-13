@@ -56,12 +56,12 @@ body {
 	border-radius: 25px;
 }
 
-.post .post-text {
+.main .post .post-text {
 	clear: both;
-
-	color: #FFFFFF;
+	
+}
+p {
+	color: #12617A;
+	padding: 5px;
 }
 
-.post .post-text p {
-	color: #FFFFFF;
-}
