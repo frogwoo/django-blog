@@ -1,5 +1,7 @@
 body {
 	background-color: #3CA6C9;
+	font-family: Roboto,sans-serif;
+
 }
 .header{
     background-color: #8BC4D6;
@@ -7,10 +9,11 @@ body {
     margin: 15px;
     padding:8px;
     display: inline-block;
+    font-weight: bold;
 }
 
 .header a:hover {
-	font-weight: bold;
+	font-weight: bolder;
 	text-decoration: none;
 }
 .main-header a{
@@ -61,6 +64,8 @@ body {
 	
 }
 p {
+	font-weight: normal;
+	font-size: 105%;
 	color: #12617A;
 	padding: 5px;
 }

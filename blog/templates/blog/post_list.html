@@ -1,27 +1,7 @@
-{% load staticfiles %}
-<html>
 
-	<head>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
-		<title>Dulcie's Blog</title>
-	</head>
+{% extends 'blog/base.html' %}
 
-	<body>
-		<div class='header'>
-			<div class='container-fluid'>
-				<div class='text-left'>
-						<div class="main-header">
-							<a href='http://127.0.0.1:8000/'>
-								Dulcie's Blog 
-							</a>
-						</div>
-				</div>
-			</div>
-		</div>
-		<div class='main'>
-			
+{% block content %}
 			{% for post in posts %}
 				<div class="post">
 					<h2 class="post-title">{{ post.title}}</h2>
@@ -29,7 +9,4 @@
     				<p class="post-text">{{ post.text | linebreaks}}</p>
     			</div>
 			{% endfor %}
-		</div>
-	</body>
-
-</html>
+{% endblock %}
