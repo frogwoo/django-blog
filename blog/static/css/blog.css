@@ -48,6 +48,9 @@ body {
 	float:left;
 }
 
+.post-title a {
+	color: #ffffff;
+}
 .post .post-date {
 	font-weight: bold;
 	color: #ffffff;	
