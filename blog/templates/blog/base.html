@@ -20,8 +20,15 @@
 							</a>
 						</div>
 				</div>
+
+			</div>
+					<div class="upper-right">
+			<div class='text-right'>
+				<a class="new-post" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 			</div>
 		</div>
+		</div>
+
 		<div class='main'>
 			{% block content %}
 			{% endblock %}			
